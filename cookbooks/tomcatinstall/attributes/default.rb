@@ -1,0 +1,10 @@
+default['nexus']['tomcat_url'] = 'http://192.168.35.1:8081/nexus/service/local/repositories/thirdparty/content/App/Tomcat/7.0.70/Tomcat-7.0.70.zip',
+default['nexus']['tomcat_port'] = '8085'
+default['nexus']['tomcat_user'] = 'admin'
+default['nexus']['tomcat_location'] = '/var/lib/tomcat'
+default['nexus']['tomca_password']= 'password'
+default['nexus']['user']= 'tomcat'
+default['nexus']['uid'] = '1001'
+default['nexus']['gid'] = '1002'
+default['nexus']['group'] = 'tomcat'
+default['nexus']['tomcat'] = 'Tomcat-7.0.70.zip'
