@@ -1,67 +1,93 @@
-I, [2016-07-24T11:38:41.325223 #12736]  INFO -- default-centos-71: -----> Converging <default-centos-71>...
-I, [2016-07-24T11:38:41.330129 #12736]  INFO -- default-centos-71: Preparing files for transfer
-I, [2016-07-24T11:38:41.331103 #12736]  INFO -- default-centos-71: Preparing dna.json
-I, [2016-07-24T11:38:41.335014 #12736]  INFO -- default-centos-71: Preparing current project directory as a cookbook
-I, [2016-07-24T11:38:41.406824 #12736]  INFO -- default-centos-71: Removing non-cookbook files before transfer
-I, [2016-07-24T11:38:41.431258 #12736]  INFO -- default-centos-71: Preparing solo.rb
-I, [2016-07-24T11:38:43.168427 #12736]  INFO -- default-centos-71: -----> Chef Omnibus installation detected (install only if missing)
-I, [2016-07-24T11:38:43.267571 #12736]  INFO -- default-centos-71: Transferring files to <default-centos-71>
-I, [2016-07-24T11:38:44.898588 #12736]  INFO -- default-centos-71: Starting Chef Client, version 12.12.15
-I, [2016-07-24T11:38:46.076817 #12736]  INFO -- default-centos-71: resolving cookbooks for run list: ["tomcatinstall::create-user", "tomcatinstall::default"]
-I, [2016-07-24T11:38:46.099290 #12736]  INFO -- default-centos-71: Synchronizing Cookbooks:
-I, [2016-07-24T11:38:46.099290 #12736]  INFO -- default-centos-71:   - tomcatinstall (0.1.0)
-I, [2016-07-24T11:38:46.111033 #12736]  INFO -- default-centos-71: Installing Cookbook Gems:
-I, [2016-07-24T11:38:46.111033 #12736]  INFO -- default-centos-71: Compiling Cookbooks...
-I, [2016-07-24T11:38:46.111033 #12736]  INFO -- default-centos-71: 
-I, [2016-07-24T11:38:46.111033 #12736]  INFO -- default-centos-71: ================================================================================
-I, [2016-07-24T11:38:46.111033 #12736]  INFO -- default-centos-71: Recipe Compile Error in /tmp/kitchen/cache/cookbooks/tomcatinstall/recipes/default.rb
-I, [2016-07-24T11:38:46.111033 #12736]  INFO -- default-centos-71: ================================================================================
-I, [2016-07-24T11:38:46.111033 #12736]  INFO -- default-centos-71: 
-I, [2016-07-24T11:38:46.111033 #12736]  INFO -- default-centos-71: SyntaxError
-I, [2016-07-24T11:38:46.111998 #12736]  INFO -- default-centos-71: -----------
-I, [2016-07-24T11:38:46.111998 #12736]  INFO -- default-centos-71: /tmp/kitchen/cache/cookbooks/tomcatinstall/recipes/default.rb:37: unknown regexp options - lb
-I, [2016-07-24T11:38:46.111998 #12736]  INFO -- default-centos-71: 
-I, [2016-07-24T11:38:46.111998 #12736]  INFO -- default-centos-71: Platform:
-I, [2016-07-24T11:38:46.111998 #12736]  INFO -- default-centos-71: ---------
-I, [2016-07-24T11:38:46.111998 #12736]  INFO -- default-centos-71: x86_64-linux
-I, [2016-07-24T11:38:46.111998 #12736]  INFO -- default-centos-71: 
-I, [2016-07-24T11:38:46.111998 #12736]  INFO -- default-centos-71: 
-I, [2016-07-24T11:38:46.111998 #12736]  INFO -- default-centos-71: Running handlers:
-I, [2016-07-24T11:38:46.111998 #12736]  INFO -- default-centos-71: [2016-07-24T15:38:46+00:00] ERROR: Running exception handlers
-I, [2016-07-24T11:38:46.111998 #12736]  INFO -- default-centos-71: Running handlers complete
-I, [2016-07-24T11:38:46.111998 #12736]  INFO -- default-centos-71: [2016-07-24T15:38:46+00:00] ERROR: Exception handlers complete
-I, [2016-07-24T11:38:46.111998 #12736]  INFO -- default-centos-71: Chef Client failed. 0 resources updated in 01 seconds
-I, [2016-07-24T11:38:46.111998 #12736]  INFO -- default-centos-71: [2016-07-24T15:38:46+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
-I, [2016-07-24T11:38:46.111998 #12736]  INFO -- default-centos-71: [2016-07-24T15:38:46+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
-I, [2016-07-24T11:38:46.111998 #12736]  INFO -- default-centos-71: [2016-07-24T15:38:46+00:00] ERROR: /tmp/kitchen/cache/cookbooks/tomcatinstall/recipes/default.rb:37: unknown regexp options - lb
-I, [2016-07-24T11:38:46.887291 #12736]  INFO -- default-centos-71: [2016-07-24T15:38:46+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
-E, [2016-07-24T11:38:46.913829 #12736] ERROR -- default-centos-71: Converge failed on instance <default-centos-71>.
-E, [2016-07-24T11:38:46.913829 #12736] ERROR -- default-centos-71: ------Exception-------
-E, [2016-07-24T11:38:46.913829 #12736] ERROR -- default-centos-71: Class: Kitchen::ActionFailed
-E, [2016-07-24T11:38:46.913829 #12736] ERROR -- default-centos-71: Message: SSH exited (1) for command: [sh -c '
+I, [2016-07-24T12:30:36.374223 #11060]  INFO -- default-centos-71: -----> Converging <default-centos-71>...
+I, [2016-07-24T12:30:36.376175 #11060]  INFO -- default-centos-71: Preparing files for transfer
+I, [2016-07-24T12:30:36.376175 #11060]  INFO -- default-centos-71: Preparing dna.json
+I, [2016-07-24T12:30:36.377142 #11060]  INFO -- default-centos-71: Preparing current project directory as a cookbook
+I, [2016-07-24T12:30:36.396747 #11060]  INFO -- default-centos-71: Removing non-cookbook files before transfer
+I, [2016-07-24T12:30:36.406524 #11060]  INFO -- default-centos-71: Preparing solo.rb
+I, [2016-07-24T12:30:39.343284 #11060]  INFO -- default-centos-71: -----> Chef Omnibus installation detected (install only if missing)
+I, [2016-07-24T12:30:39.495328 #11060]  INFO -- default-centos-71: Transferring files to <default-centos-71>
+I, [2016-07-24T12:30:41.227985 #11060]  INFO -- default-centos-71: Starting Chef Client, version 12.12.15
+I, [2016-07-24T12:30:42.720920 #11060]  INFO -- default-centos-71: resolving cookbooks for run list: ["tomcatinstall::create-user", "tomcatinstall::default"]
+I, [2016-07-24T12:30:42.764915 #11060]  INFO -- default-centos-71: Synchronizing Cookbooks:
+I, [2016-07-24T12:30:42.776648 #11060]  INFO -- default-centos-71:   - tomcatinstall (0.1.0)
+I, [2016-07-24T12:30:42.788380 #11060]  INFO -- default-centos-71: Installing Cookbook Gems:
+I, [2016-07-24T12:30:42.788380 #11060]  INFO -- default-centos-71: Compiling Cookbooks...
+I, [2016-07-24T12:30:42.801089 #11060]  INFO -- default-centos-71: 
+I, [2016-07-24T12:30:42.801089 #11060]  INFO -- default-centos-71: ================================================================================
+I, [2016-07-24T12:30:42.802066 #11060]  INFO -- default-centos-71: Recipe Compile Error in /tmp/kitchen/cache/cookbooks/tomcatinstall/recipes/default.rb
+I, [2016-07-24T12:30:42.802066 #11060]  INFO -- default-centos-71: ================================================================================
+I, [2016-07-24T12:30:42.802066 #11060]  INFO -- default-centos-71: 
+I, [2016-07-24T12:30:42.802066 #11060]  INFO -- default-centos-71: NoMethodError
+I, [2016-07-24T12:30:42.802066 #11060]  INFO -- default-centos-71: -------------
+I, [2016-07-24T12:30:42.803044 #11060]  INFO -- default-centos-71: undefined method `[]' for nil:NilClass
+I, [2016-07-24T12:30:42.803044 #11060]  INFO -- default-centos-71: 
+I, [2016-07-24T12:30:42.803044 #11060]  INFO -- default-centos-71: Cookbook Trace:
+I, [2016-07-24T12:30:42.803044 #11060]  INFO -- default-centos-71: ---------------
+I, [2016-07-24T12:30:42.803044 #11060]  INFO -- default-centos-71:   /tmp/kitchen/cache/cookbooks/tomcatinstall/recipes/default.rb:91:in `from_file'
+I, [2016-07-24T12:30:42.803044 #11060]  INFO -- default-centos-71: 
+I, [2016-07-24T12:30:42.804018 #11060]  INFO -- default-centos-71: Relevant File Content:
+I, [2016-07-24T12:30:42.804018 #11060]  INFO -- default-centos-71: ----------------------
+I, [2016-07-24T12:30:42.804018 #11060]  INFO -- default-centos-71: /tmp/kitchen/cache/cookbooks/tomcatinstall/recipes/default.rb:
+I, [2016-07-24T12:30:42.804018 #11060]  INFO -- default-centos-71: 
+I, [2016-07-24T12:30:42.804018 #11060]  INFO -- default-centos-71:  84:  # 	  mv node['nexus']['tomcat_untar'] #{node['nexus']['server']}
+I, [2016-07-24T12:30:42.804018 #11060]  INFO -- default-centos-71:  85:  # 	  rm -rf #{node['nexus']['server']/webapps
+I, [2016-07-24T12:30:42.805003 #11060]  INFO -- default-centos-71:  86:  # 	EOH
+I, [2016-07-24T12:30:42.805003 #11060]  INFO -- default-centos-71:  87:  # end
+I, [2016-07-24T12:30:42.805003 #11060]  INFO -- default-centos-71:  88:  
+I, [2016-07-24T12:30:42.805003 #11060]  INFO -- default-centos-71:  89:  
+I, [2016-07-24T12:30:42.805003 #11060]  INFO -- default-centos-71:  90:  ##Creating Tomcat Init Script
+I, [2016-07-24T12:30:42.805003 #11060]  INFO -- default-centos-71:  91>> template "/etc/init.d/tomcat_#{node['tomcat']['server']}" do
+I, [2016-07-24T12:30:42.805980 #11060]  INFO -- default-centos-71:  92:  	source 'tomcat_init.sh.erb'
+I, [2016-07-24T12:30:42.805980 #11060]  INFO -- default-centos-71:  93:  	user node['nexus']['user']
+I, [2016-07-24T12:30:42.805980 #11060]  INFO -- default-centos-71:  94:  	group node['nexus']['group'] 
+I, [2016-07-24T12:30:42.805980 #11060]  INFO -- default-centos-71:  95:  	mode "0755"
+I, [2016-07-24T12:30:42.805980 #11060]  INFO -- default-centos-71:  96:  	backup false
+I, [2016-07-24T12:30:42.805980 #11060]  INFO -- default-centos-71:  97:  	variables(
+I, [2016-07-24T12:30:42.805980 #11060]  INFO -- default-centos-71:  98:  	:home_dir => node['nexus']['tomcat_location'],
+I, [2016-07-24T12:30:42.806951 #11060]  INFO -- default-centos-71:  99:  	:service_name => node['nexus']['server']
+I, [2016-07-24T12:30:42.806951 #11060]  INFO -- default-centos-71: 100:  	)
+I, [2016-07-24T12:30:42.806951 #11060]  INFO -- default-centos-71: 
+I, [2016-07-24T12:30:42.806951 #11060]  INFO -- default-centos-71: Platform:
+I, [2016-07-24T12:30:42.806951 #11060]  INFO -- default-centos-71: ---------
+I, [2016-07-24T12:30:42.806951 #11060]  INFO -- default-centos-71: x86_64-linux
+I, [2016-07-24T12:30:42.807928 #11060]  INFO -- default-centos-71: 
+I, [2016-07-24T12:30:42.830413 #11060]  INFO -- default-centos-71: 
+I, [2016-07-24T12:30:42.830413 #11060]  INFO -- default-centos-71: Running handlers:
+I, [2016-07-24T12:30:42.830413 #11060]  INFO -- default-centos-71: [2016-07-24T16:30:42+00:00] ERROR: Running exception handlers
+I, [2016-07-24T12:30:42.830413 #11060]  INFO -- default-centos-71: Running handlers complete
+I, [2016-07-24T12:30:42.830413 #11060]  INFO -- default-centos-71: [2016-07-24T16:30:42+00:00] ERROR: Exception handlers complete
+I, [2016-07-24T12:30:42.830413 #11060]  INFO -- default-centos-71: Chef Client failed. 0 resources updated in 01 seconds
+I, [2016-07-24T12:30:42.831393 #11060]  INFO -- default-centos-71: [2016-07-24T16:30:42+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2016-07-24T12:30:42.831393 #11060]  INFO -- default-centos-71: [2016-07-24T16:30:42+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+I, [2016-07-24T12:30:42.831393 #11060]  INFO -- default-centos-71: [2016-07-24T16:30:42+00:00] ERROR: undefined method `[]' for nil:NilClass
+I, [2016-07-24T12:30:43.215554 #11060]  INFO -- default-centos-71: [2016-07-24T16:30:43+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+E, [2016-07-24T12:30:43.298663 #11060] ERROR -- default-centos-71: Converge failed on instance <default-centos-71>.
+E, [2016-07-24T12:30:43.298663 #11060] ERROR -- default-centos-71: ------Exception-------
+E, [2016-07-24T12:30:43.298663 #11060] ERROR -- default-centos-71: Class: Kitchen::ActionFailed
+E, [2016-07-24T12:30:43.298663 #11060] ERROR -- default-centos-71: Message: SSH exited (1) for command: [sh -c '
 
 sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
 ']
-E, [2016-07-24T11:38:46.913829 #12736] ERROR -- default-centos-71: ---Nested Exception---
-E, [2016-07-24T11:38:46.913829 #12736] ERROR -- default-centos-71: Class: Kitchen::Transport::SshFailed
-E, [2016-07-24T11:38:46.914805 #12736] ERROR -- default-centos-71: Message: SSH exited (1) for command: [sh -c '
+E, [2016-07-24T12:30:43.299626 #11060] ERROR -- default-centos-71: ---Nested Exception---
+E, [2016-07-24T12:30:43.299626 #11060] ERROR -- default-centos-71: Class: Kitchen::Transport::SshFailed
+E, [2016-07-24T12:30:43.299626 #11060] ERROR -- default-centos-71: Message: SSH exited (1) for command: [sh -c '
 
 sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
 ']
-E, [2016-07-24T11:38:46.914805 #12736] ERROR -- default-centos-71: ------Backtrace-------
-E, [2016-07-24T11:38:46.914805 #12736] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/provisioner/base.rb:76:in `rescue in call'
-E, [2016-07-24T11:38:46.914805 #12736] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/provisioner/base.rb:79:in `call'
-E, [2016-07-24T11:38:46.914805 #12736] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:373:in `block in converge_action'
-E, [2016-07-24T11:38:46.914805 #12736] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:495:in `call'
-E, [2016-07-24T11:38:46.914805 #12736] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:495:in `synchronize_or_call'
-E, [2016-07-24T11:38:46.914805 #12736] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:460:in `block in action'
-E, [2016-07-24T11:38:46.914805 #12736] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
-E, [2016-07-24T11:38:46.914805 #12736] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:459:in `action'
-E, [2016-07-24T11:38:46.914805 #12736] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:369:in `converge_action'
-E, [2016-07-24T11:38:46.914805 #12736] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:348:in `block in transition_to'
-E, [2016-07-24T11:38:46.914805 #12736] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:347:in `each'
-E, [2016-07-24T11:38:46.914805 #12736] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:347:in `transition_to'
-E, [2016-07-24T11:38:46.914805 #12736] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:138:in `converge'
-E, [2016-07-24T11:38:46.914805 #12736] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/command.rb:176:in `public_send'
-E, [2016-07-24T11:38:46.914805 #12736] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
-E, [2016-07-24T11:38:46.914805 #12736] ERROR -- default-centos-71: ----------------------
+E, [2016-07-24T12:30:43.299626 #11060] ERROR -- default-centos-71: ------Backtrace-------
+E, [2016-07-24T12:30:43.299626 #11060] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/provisioner/base.rb:76:in `rescue in call'
+E, [2016-07-24T12:30:43.299626 #11060] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/provisioner/base.rb:79:in `call'
+E, [2016-07-24T12:30:43.299626 #11060] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:373:in `block in converge_action'
+E, [2016-07-24T12:30:43.299626 #11060] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:495:in `call'
+E, [2016-07-24T12:30:43.299626 #11060] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:495:in `synchronize_or_call'
+E, [2016-07-24T12:30:43.300604 #11060] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:460:in `block in action'
+E, [2016-07-24T12:30:43.300604 #11060] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-07-24T12:30:43.300604 #11060] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:459:in `action'
+E, [2016-07-24T12:30:43.300604 #11060] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:369:in `converge_action'
+E, [2016-07-24T12:30:43.300995 #11060] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-07-24T12:30:43.300995 #11060] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:347:in `each'
+E, [2016-07-24T12:30:43.300995 #11060] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-07-24T12:30:43.300995 #11060] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:138:in `converge'
+E, [2016-07-24T12:30:43.300995 #11060] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/command.rb:176:in `public_send'
+E, [2016-07-24T12:30:43.300995 #11060] ERROR -- default-centos-71: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2016-07-24T12:30:43.300995 #11060] ERROR -- default-centos-71: ----------------------

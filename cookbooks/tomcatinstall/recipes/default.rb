@@ -9,8 +9,44 @@
 
 #include_recipe 'create-user'
 
+# user = node['nexus']['user']
+# group = node['nexus']['group']
+
 user = node['nexus']['user']
-group = node['nexus']['group']
+uid = node['nexus']['uid'] 
+gid = node['nexus']['gid'] 
+group = node['nexus']['group'] 
+
+# Creating a group
+group group do 
+	gid gid
+	action :create
+end
+
+# Creating a user
+user user do 
+	gid gid
+	uid uid
+	action :create
+end
+
+# adding user to a group
+
+group group do
+	gid gid 
+	members user
+	append true
+	action :create
+end
+
+# Creating Directory for the installation 
+directory node['nexus']['tomcat_location'] do
+	owner user
+	group group
+	mode 0755
+	recursive true
+	action :create
+end
 
 
 #Downloading Tomcat Zip file From server
@@ -30,11 +66,10 @@ bash 'install' do
 	user node['nexus']['user']
 	group node['nexus']['group']
 	code <<-EOH
-		tar xvzf #{Chef::Config[:file_cache_path]}/{#node['nexus']['tomcat_version']}
+		tar zxf #{Chef::Config[:file_cache_path]}/#{node['nexus']['tomcat_version']}
 		mv #{node['nexus']['tomcat_untar']} #{node['nexus']['server']}
-		rm -rf #{node['nexus']['server']}/webapps
-		EOH
-	not_if { ::File.exists?(/var/lib/tomcat) } 
+		rm -rf #{node['nexus']['server']}/webapps/*
+	EOH
 end
 
 
@@ -66,7 +101,7 @@ template "/etc/init.d/tomcat_#{node['tomcat']['server']}" do
 	notifies :run, 'execute[start_tomcat_service]', :immediately
 end
 
-teamplate "#{node['nexus']['tomcat_location']}/#{['nexus']['server'] }/conf/tomcat-users.xml" do
+template "#{node['nexus']['tomcat_location']}/#{['nexus']['server'] }/conf/tomcat-users.xml" do
 	source 'tomcat-user.erb'
 	user node['nexus']['user']
 	group node['nexus']['group'] 
