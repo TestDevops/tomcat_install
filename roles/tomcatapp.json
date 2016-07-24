@@ -1,0 +1,12 @@
+{
+	"name" : "tomcat_app",
+	"Description" : "installing tomcat_app",
+	"chef_type" : "role",
+	"json_class" : "Chef::Role",
+	"run_list" : [
+		"recipe[tomcatinstall::create-user]",
+		"recipe[tomcatinstall::default]"
+	]
+
+
+}
