@@ -12,7 +12,7 @@ suites:
   - name: default
     run_list:
 
-      - recipe[tomcatinstall::create-user]
+     # - recipe[tomcatinstall::create-user]
       - recipe[tomcatinstall::default]
 
     attributes:

@@ -1,3 +1,0 @@
-I, [2016-07-24T12:30:35.932354 #11060]  INFO -- Kitchen: -----> Starting Kitchen (v1.5.0)
-I, [2016-07-24T12:30:36.374223 #11060]  INFO -- Kitchen: -----> Converging <default-centos-71>...
-E, [2016-07-24T12:30:43.306868 #11060] ERROR -- Kitchen: Converge failed on instance <default-centos-71>.

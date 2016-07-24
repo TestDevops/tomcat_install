@@ -3,4 +3,4 @@ hostname: 127.0.0.1
 port: '2222'
 username: vagrant
 ssh_key: C:/chef/cookbooks/Github/cookbooks/tomcatinstall/.kitchen/kitchen-vagrant/kitchen-tomcatinstall-default-centos-71/.vagrant/machines/default/virtualbox/private_key
-last_action: create
+last_action: converge
